@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataflow for fetching details should dispatch a failing request to fetch details 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": "query",
+    "type": "SEARCH_REQUEST",
+  },
+  Object {
+    "meta": undefined,
+    "payload": true,
+    "type": "IS_LOADING",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "error": true,
+      "message": undefined,
+    },
+    "type": "API_ERROR",
+  },
+  Object {
+    "meta": undefined,
+    "payload": false,
+    "type": "IS_LOADING",
+  },
+]
+`;
+
+exports[`dataflow for fetching details should dispatch a successful request to fetch details 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": 1,
+    "type": "DETAILS_REQUEST",
+  },
+  Object {
+    "meta": undefined,
+    "payload": true,
+    "type": "IS_LOADING",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {},
+    "type": "DETAILS_SUCCESS",
+  },
+]
+`;

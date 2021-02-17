@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dataflow for login should dispatch a failing request to login 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": null,
+    "type": "LOGIN_REQUEST",
+  },
+  Object {
+    "meta": undefined,
+    "payload": true,
+    "type": "IS_LOADING",
+  },
+  Object {
+    "type": "LOGIN_FAILURE",
+  },
+  Object {
+    "meta": undefined,
+    "payload": Object {
+      "error": true,
+      "message": undefined,
+    },
+    "type": "API_ERROR",
+  },
+  Object {
+    "meta": undefined,
+    "payload": false,
+    "type": "IS_LOADING",
+  },
+]
+`;
+
+exports[`dataflow for login should dispatch a successful request to login 1`] = `
+Array [
+  Object {
+    "meta": undefined,
+    "payload": null,
+    "type": "LOGIN_REQUEST",
+  },
+  Object {
+    "meta": undefined,
+    "payload": true,
+    "type": "IS_LOADING",
+  },
+  Object {
+    "meta": undefined,
+    "payload": "token",
+    "type": "LOGIN_SUCCESS",
+  },
+]
+`;
