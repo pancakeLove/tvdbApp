@@ -1,6 +1,17 @@
 # Instructions to run
-The ".env" file in root needs to be updated with the valid parameters 
-for retreiving the tvDb-API jwt token. For now there are just placeholders
-here in order to not expose the real data publicly.
+- git clone https://github.com/pancakeLove/tvdbApp.git
+- Update the ".env" file in root with valid parameters 
+for retreiving the tvDb-API jwt token.
 
-Otherwise just the normal "npm install" ... etc
+Then run
+- npm install
+
+## ios
+- cd ios && pod install && cd ..
+- react-native run-ios
+
+## android
+- source .env.android.bash
+- react-native run-android
+
+
